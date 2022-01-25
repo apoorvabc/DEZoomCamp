@@ -1,0 +1,18 @@
+To get the docker compose up and running:
+
+docker-compose up -d
+
+To build the docker image from docker file file:
+
+docker build -t taxi_ingest:v001 .
+
+To run the script with docker
+
+docker run -it \
+  --network=week1_docker_postgres_default \
+  taxi_ingest:v001 \
+    --user=root \
+    --password=root \
+    --host=pgdatabase \
+    --port=5432 \
+    --db=ny_taxi \
