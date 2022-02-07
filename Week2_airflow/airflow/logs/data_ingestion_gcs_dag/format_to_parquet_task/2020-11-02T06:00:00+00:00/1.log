@@ -1,0 +1,27 @@
+[2022-02-06 15:01:36,490] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2020-11-02T06:00:00+00:00 [queued]>
+[2022-02-06 15:01:36,556] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2020-11-02T06:00:00+00:00 [queued]>
+[2022-02-06 15:01:36,560] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 15:01:36,562] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-06 15:01:36,563] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 15:01:36,629] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2020-11-02 06:00:00+00:00
+[2022-02-06 15:01:36,658] {standard_task_runner.py:52} INFO - Started process 2875 to run task
+[2022-02-06 15:01:36,689] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'format_to_parquet_task', 'scheduled__2020-11-02T06:00:00+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dags_hw.py', '--cfg-path', '/tmp/tmp7qzr6r8f', '--error-file', '/tmp/tmp23fm972i']
+[2022-02-06 15:01:36,703] {standard_task_runner.py:77} INFO - Job 147: Subtask format_to_parquet_task
+[2022-02-06 15:01:36,974] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2020-11-02T06:00:00+00:00 [running]> on host 6aa22590a839
+[2022-02-06 15:01:37,188] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-06 15:01:37,241] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-11-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-11-02T06:00:00+00:00
+[2022-02-06 15:03:03,167] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-06 15:03:04,317] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=format_to_parquet_task, execution_date=20201102T060000, start_date=20220206T150136, end_date=20220206T150304
+[2022-02-06 15:03:07,602] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-02-06 15:03:07,774] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 2875. PIDs of all processes in the group: [2875]
+[2022-02-06 15:03:07,776] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2875
+[2022-02-06 15:03:14,482] {process_utils.py:70} INFO - Process psutil.Process(pid=2875, status='terminated', exitcode=0, started='15:01:35') (2875) terminated with exit code 0

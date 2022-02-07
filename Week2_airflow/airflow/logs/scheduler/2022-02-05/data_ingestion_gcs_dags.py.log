@@ -1,0 +1,66 @@
+[2022-02-05 19:01:20,707] {processor.py:163} INFO - Started process (PID=78) to work on /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:01:20,730] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dags.py for tasks to queue
+[2022-02-05 19:01:20,732] {logging_mixin.py:109} INFO - [2022-02-05 19:01:20,732] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:01:34,511] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:01:40,970] {logging_mixin.py:109} INFO - [2022-02-05 19:01:40,958] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-05 19:01:41,425] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dags.py took 20.955 seconds
+[2022-02-05 19:02:12,768] {processor.py:163} INFO - Started process (PID=104) to work on /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:02:12,777] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dags.py for tasks to queue
+[2022-02-05 19:02:12,781] {logging_mixin.py:109} INFO - [2022-02-05 19:02:12,781] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:02:15,714] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:02:15,755] {logging_mixin.py:109} INFO - [2022-02-05 19:02:15,754] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-05 19:02:15,879] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dags.py took 3.122 seconds
+[2022-02-05 19:02:46,319] {processor.py:163} INFO - Started process (PID=130) to work on /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:02:46,323] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dags.py for tasks to queue
+[2022-02-05 19:02:46,325] {logging_mixin.py:109} INFO - [2022-02-05 19:02:46,325] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:03:00,825] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:03:04,343] {logging_mixin.py:109} INFO - [2022-02-05 19:03:04,343] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-05 19:03:04,382] {logging_mixin.py:109} INFO - [2022-02-05 19:03:04,381] {dag.py:2415} INFO - Creating ORM DAG for data_ingestion_gcs_dag
+[2022-02-05 19:03:04,514] {logging_mixin.py:109} INFO - [2022-02-05 19:03:04,514] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-04 00:00:00+00:00
+[2022-02-05 19:03:04,712] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dags.py took 18.445 seconds
+[2022-02-05 19:03:36,229] {processor.py:163} INFO - Started process (PID=172) to work on /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:03:36,239] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dags.py for tasks to queue
+[2022-02-05 19:03:36,246] {logging_mixin.py:109} INFO - [2022-02-05 19:03:36,246] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:03:39,392] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:03:39,437] {logging_mixin.py:109} INFO - [2022-02-05 19:03:39,436] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-05 19:03:39,488] {logging_mixin.py:109} INFO - [2022-02-05 19:03:39,488] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-04 00:00:00+00:00
+[2022-02-05 19:03:39,520] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dags.py took 3.319 seconds
+[2022-02-05 19:04:09,848] {processor.py:163} INFO - Started process (PID=201) to work on /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:04:09,851] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dags.py for tasks to queue
+[2022-02-05 19:04:09,856] {logging_mixin.py:109} INFO - [2022-02-05 19:04:09,856] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:04:11,941] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dags.py
+[2022-02-05 19:04:12,185] {logging_mixin.py:109} INFO - [2022-02-05 19:04:12,185] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-05 19:04:12,209] {logging_mixin.py:109} INFO - [2022-02-05 19:04:12,209] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-04 00:00:00+00:00
+[2022-02-05 19:04:12,218] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 663, in process_file
+    dagbag.sync_to_db()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 608, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 622, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2485, in bulk_write_to_db
+    DagCode.bulk_sync_to_db(filelocs, session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagcode.py", line 113, in bulk_sync_to_db
+    os.path.getmtime(correct_maybe_zipped(fileloc)), tz=timezone.utc
+  File "/usr/local/lib/python3.7/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/data_ingestion_gcs_dags.py'

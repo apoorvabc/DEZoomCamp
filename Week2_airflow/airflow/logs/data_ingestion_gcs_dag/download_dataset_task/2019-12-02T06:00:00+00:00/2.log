@@ -1,0 +1,33 @@
+[2022-02-05 21:14:59,040] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2019-12-02T06:00:00+00:00 [queued]>
+[2022-02-05 21:14:59,195] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2019-12-02T06:00:00+00:00 [queued]>
+[2022-02-05 21:14:59,198] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 21:14:59,206] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-02-05 21:14:59,208] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 21:27:20,422] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2019-12-02 06:00:00+00:00
+[2022-02-05 21:27:20,599] {standard_task_runner.py:52} INFO - Started process 2339 to run task
+[2022-02-05 21:27:20,695] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'scheduled__2019-12-02T06:00:00+00:00', '--job-id', '126', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dags_hw.py', '--cfg-path', '/tmp/tmp3hjzrxy2', '--error-file', '/tmp/tmp5exb7dby']
+[2022-02-05 21:27:20,756] {standard_task_runner.py:77} INFO - Job 126: Subtask download_dataset_task
+[2022-02-05 21:27:21,403] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2019-12-02T06:00:00+00:00 [running]> on host 6aa22590a839
+[2022-02-05 21:27:21,791] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-05 21:27:22,099] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-12-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-12-02T06:00:00+00:00
+[2022-02-05 21:27:22,112] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-05 21:27:22,125] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sS https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2019-12.csv > /opt/***/yellow_tripdata_2019-12.csv']
+[2022-02-05 21:27:22,186] {subprocess.py:85} INFO - Output:
+[2022-02-05 21:27:36,411] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-02-05 21:27:36,548] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 2339. PIDs of all processes in the group: [2344, 2345, 2339]
+[2022-02-05 21:27:36,559] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2339
+[2022-02-05 21:27:36,573] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-02-05 21:27:36,582] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-02-05 21:27:37,216] {process_utils.py:70} INFO - Process psutil.Process(pid=2339, status='terminated', exitcode=0, started='21:27:20') (2339) terminated with exit code 0
+[2022-02-05 21:27:37,596] {process_utils.py:70} INFO - Process psutil.Process(pid=2344, status='terminated', started='21:27:21') (2344) terminated with exit code None
+[2022-02-05 21:27:44,820] {process_utils.py:70} INFO - Process psutil.Process(pid=2345, status='terminated', started='21:27:21') (2345) terminated with exit code None

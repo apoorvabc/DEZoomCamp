@@ -1,0 +1,26 @@
+[2022-02-05 20:13:20,649] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2019-05-02T06:00:00+00:00 [queued]>
+[2022-02-05 20:13:20,669] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2019-05-02T06:00:00+00:00 [queued]>
+[2022-02-05 20:13:20,671] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 20:13:20,673] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-02-05 20:13:20,674] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 20:13:20,704] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2019-05-02 06:00:00+00:00
+[2022-02-05 20:13:20,729] {standard_task_runner.py:52} INFO - Started process 1726 to run task
+[2022-02-05 20:13:20,793] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'local_to_gcs_task', 'scheduled__2019-05-02T06:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dags_hw.py', '--cfg-path', '/tmp/tmpvg9768y7', '--error-file', '/tmp/tmp94p2z9mb']
+[2022-02-05 20:13:20,813] {standard_task_runner.py:77} INFO - Job 117: Subtask local_to_gcs_task
+[2022-02-05 20:13:21,097] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2019-05-02T06:00:00+00:00 [running]> on host 6aa22590a839
+[2022-02-05 20:13:21,289] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-05 20:13:21,408] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-05-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-05-02T06:00:00+00:00
+[2022-02-05 20:22:34,060] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-02-05 20:22:34,084] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 1726. PIDs of all processes in the group: [1726]
+[2022-02-05 20:22:34,092] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 1726
+[2022-02-05 20:22:34,138] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-02-05 20:22:35,125] {process_utils.py:70} INFO - Process psutil.Process(pid=1726, status='terminated', exitcode=0, started='20:13:20') (1726) terminated with exit code 0

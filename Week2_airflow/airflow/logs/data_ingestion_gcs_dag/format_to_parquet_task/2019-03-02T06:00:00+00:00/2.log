@@ -1,0 +1,28 @@
+[2022-02-06 15:09:09,621] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-03-02T06:00:00+00:00 [queued]>
+[2022-02-06 15:09:09,659] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-03-02T06:00:00+00:00 [queued]>
+[2022-02-06 15:09:09,660] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 15:09:09,661] {taskinstance.py:1239} INFO - Starting attempt 2 of 3
+[2022-02-06 15:09:09,663] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 15:09:09,702] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2019-03-02 06:00:00+00:00
+[2022-02-06 15:09:09,733] {standard_task_runner.py:52} INFO - Started process 3177 to run task
+[2022-02-06 15:09:09,752] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'format_to_parquet_task', 'scheduled__2019-03-02T06:00:00+00:00', '--job-id', '164', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dags_hw.py', '--cfg-path', '/tmp/tmpe2y3tndk', '--error-file', '/tmp/tmp0slgd80x']
+[2022-02-06 15:09:09,766] {standard_task_runner.py:77} INFO - Job 164: Subtask format_to_parquet_task
+[2022-02-06 15:09:10,213] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-03-02T06:00:00+00:00 [running]> on host 6aa22590a839
+[2022-02-06 15:09:10,386] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-06 15:09:10,466] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-03-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-03-02T06:00:00+00:00
+[2022-02-06 16:32:32,148] {local_task_job.py:212} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2022-02-06 16:32:33,941] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 3177. PIDs of all processes in the group: [3177]
+[2022-02-06 16:32:34,015] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 3177
+[2022-02-06 16:33:33,981] {process_utils.py:138} WARNING - process psutil.Process(pid=3177, name='airflow task ru', status='running', started='15:09:09') did not respond to SIGTERM. Trying SIGKILL
+[2022-02-06 16:33:34,084] {process_utils.py:75} INFO - Sending the signal Signals.SIGKILL to group 3177
+[2022-02-06 16:34:07,041] {process_utils.py:70} INFO - Process psutil.Process(pid=3177, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='15:09:09') (3177) terminated with exit code Negsignal.SIGKILL
+[2022-02-06 16:34:07,294] {standard_task_runner.py:135} ERROR - Job 164 was killed before it finished (likely due to running out of memory)

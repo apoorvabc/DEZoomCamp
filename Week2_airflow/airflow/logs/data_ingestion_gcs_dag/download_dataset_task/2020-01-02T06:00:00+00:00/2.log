@@ -1,0 +1,37 @@
+[2022-02-05 21:14:58,953] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2020-01-02T06:00:00+00:00 [queued]>
+[2022-02-05 21:14:59,079] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2020-01-02T06:00:00+00:00 [queued]>
+[2022-02-05 21:14:59,086] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 21:14:59,100] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-02-05 21:14:59,102] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 21:14:59,216] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2020-01-02 06:00:00+00:00
+[2022-02-05 21:27:20,329] {standard_task_runner.py:52} INFO - Started process 2336 to run task
+[2022-02-05 21:27:20,427] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'scheduled__2020-01-02T06:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dags_hw.py', '--cfg-path', '/tmp/tmptjv8hsvm', '--error-file', '/tmp/tmppsgjn34e']
+[2022-02-05 21:27:20,459] {standard_task_runner.py:77} INFO - Job 128: Subtask download_dataset_task
+[2022-02-05 21:27:21,308] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2020-01-02T06:00:00+00:00 [running]> on host 6aa22590a839
+[2022-02-05 21:27:21,696] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-05 21:27:21,838] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-02T06:00:00+00:00
+[2022-02-05 21:27:21,843] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-05 21:27:21,868] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sS https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2020-01.csv > /opt/***/yellow_tripdata_2020-01.csv']
+[2022-02-05 21:27:22,207] {subprocess.py:85} INFO - Output:
+[2022-02-05 21:27:41,623] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-02-05 21:27:41,632] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 2336. PIDs of all processes in the group: [2343, 2346, 2336]
+[2022-02-05 21:27:41,636] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2336
+[2022-02-05 21:27:41,659] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-02-05 21:27:41,660] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-02-05 21:27:42,351] {process_utils.py:70} INFO - Process psutil.Process(pid=2343, status='terminated', started='21:27:21') (2343) terminated with exit code None
+[2022-02-05 21:27:42,355] {process_utils.py:70} INFO - Process psutil.Process(pid=2336, status='terminated', exitcode=0, started='21:27:20') (2336) terminated with exit code 0
+[2022-02-05 23:18:43,539] {process_utils.py:138} WARNING - process psutil.Process(pid=2346, name='bash', status='running', started='21:27:22') did not respond to SIGTERM. Trying SIGKILL
+[2022-02-05 23:18:46,250] {process_utils.py:75} INFO - Sending the signal Signals.SIGKILL to group 2336
+[2022-02-05 23:18:46,304] {process_utils.py:90} INFO - Sending the signal Signals.SIGKILL to process 2336 as process group is missing.
+[2022-02-06 02:54:28,718] {process_utils.py:70} INFO - Process psutil.Process(pid=2346, name='bash', status='terminated', started='21:27:22') (2346) terminated with exit code None
+[2022-02-06 02:54:48,966] {local_task_job.py:142} ERROR - Heartbeat time limit exceeded!
